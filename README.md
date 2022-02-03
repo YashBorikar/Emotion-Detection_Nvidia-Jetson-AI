@@ -242,7 +242,8 @@ Install dependencies
 Start the server
 
 ```bash
-  python app.py
+  cd Flask
+  python emotion_detection.py
 ```
 ### Advantages
 
