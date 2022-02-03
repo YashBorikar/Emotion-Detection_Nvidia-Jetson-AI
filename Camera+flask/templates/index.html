@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<style>
+body {
+  background-color: #000000;
+}
+.login-col{
+  background-color: whitesmoke;
+  border-radius: 15px 0px 0px 15px;
+}
+</style>
+
+<script>
+  function validate(){
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  console.log(username);
+  if ( username == "admin" && password == "admin"){
+  window.location = "{{url_for('selection') }}";
+  return false;
+  }
+  else{
+  alert("Incorrect Credentials");
+  }
+  }
+</script>
+{% endblock head%}
+
+{% block body %}
+  <br/>
+  <div class='container' style='text-align: center;'>
+    <h1 style='color:white;'>Emotion Detection</h1>
+  </div>
+
+  <div class='container justify-content-center'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class='row' style='box-shadow: rgba(22, 44, 245, 0.616) 0px 25px 20px -20px;'>
+      <div class="col col-md-6 login-col">
+        <div class="align-items-center h-custom-2 px-4  mt-5 pt-5 pt-xl-0 mt-xl-n5" style='text-align: center;'>
+      
+          <form  id="form_id" method="post" name="myform">
+            <h3 class="fw-normal" style="letter-spacing: 1px;">Login</h3>
+            <p style='margin-bottom: 1.5em;'>Login to use Emotion Detection</p>
+            <div class="row mb-3">
+              <label for="username" class="col-sm-3 col-form-label">Username</label>
+              <div class="col-sm-8">
+                <input type="text" name="username" class="form-control" id="username">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="password" class="col-sm-3 col-form-label">Password</label>
+              <div class="col-sm-8">
+                <input type="password" name="password" class="form-control" id="password">
+              </div>
+            </div>
+            <input type="button" value="Login" class="btn btn-primary mb-2" id="submit" onclick="validate()" />
+
+          </form>
+        </div>
+      </div>
+      <div class="col col-md-6">
+            <img src='../static/login.gif' alt="Snow" style="width: 100%; max-width: 600px; height: auto;">
+      </div>
+    </div>
+  </div>
+  {% endblock body%}

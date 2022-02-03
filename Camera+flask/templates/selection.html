@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <style>
+
+      .container{
+        margin-top: 15%;
+      }
+      .popout{
+        background-color: rgb(211, 211, 211);
+        text-align: center;
+        text-decoration: none;
+        padding:5%;
+        border-radius: 8px;
+        font-size: 1.5em;
+        color: black;
+      }
+      .popout:hover {
+        color: black;
+        animation: popout 0.8s ease;
+        -webkit-animation: popout 0.8s ease;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+      }
+      @keyframes popout {
+          from{transform:scale(1)}
+          80%{transform:scale(1.2)}
+      }
+    </style>
+{% endblock head%}
+
+{% block body %}
+  <div class="container">
+    <div class="row justify-content-center">
+      <a href="{{url_for('face_detection') }}" class="col col-lg-4 popout" style='margin: 0px 50px 15px 0px;'>
+          <span>Use Emotion Detection</span>
+      </a>
+      <a href="{{url_for('emoji') }}" class="col col-lg-4 popout" style='margin: 0px 50px 15px 0px;'>
+          <span>Use Emojis</span>
+      </a>
+    </div>
+  </div>
+{% endblock body%}

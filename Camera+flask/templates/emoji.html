@@ -1,0 +1,92 @@
+{% extends 'base.html' %} {% block head %}
+<style>
+    .popout:hover {
+        animation: popout 0.8s ease;
+        -webkit-animation: popout 0.8s ease;
+    }
+    
+    @keyframes popout {
+        from {
+            transform: scale(1)
+        }
+        80% {
+            transform: scale(1.2)
+        }
+    }
+    
+    @media (min-width: 800px) {
+        .popout:hover {
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
+    }
+    
+    @media (max-width: 1200px) {
+        .popout {
+            margin-right: 50px;
+        }
+    }
+</style>
+{% endblock head %} {% block body %}
+<div>
+    <h1 style='text-align: center; margin-top: 3%;'>Select Emoji</h1>
+    <div class="row d-flex justify-content-center" style='margin-top: 10%;'>
+        <div class="col col-1 popout" style='margin: 0px 15px 15px 0px; width: 10rem;'>
+            <div class="card">
+                <a href='https://www.youtube.com/results?search_query=happy+songs' target="blank"><img class="card-img-top" src="../static/emojis/happy.png" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h5 class="card-title" style='text-align: center'>Happy</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col col-1 popout" style='margin: 0px 15px 15px 0px; width: 10rem;'>
+            <div class="card">
+                <a href='https://www.youtube.com/results?search_query=surprised+songs' target="blank"><img class="card-img-top" src="../static/emojis/surpriced.png" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h5 class="card-title" style='text-align: center'>Surprised</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col col-1 popout" style='margin: 0px 15px 15px 0px; width: 10rem;'>
+            <div class="card">
+                <a href='https://www.youtube.com/results?search_query=neutral+songs' target="blank"><img class="card-img-top" src="../static/emojis/neutral.png" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h5 class="card-title" style=' text-align: center'>Neutral</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col col-1 popout" style='margin: 0px 15px 15px 0px; width: 10rem; '>
+            <div class="card">
+                <a href='https://www.youtube.com/results?search_query=sad+songs' target="blank"><img class="card-img-top" src="../static/emojis/sad.png" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h5 class="card-title" style='text-align: center '>Sad</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col col-1 popout" style='margin: 0px 15px 15px 0px; width: 10rem; '>
+            <div class="card">
+                <a href='https://www.youtube.com/results?search_query=fearful+songs' target="blank"><img class="card-img-top" src="../static/emojis/fearful.png" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h5 class="card-title" style='text-align: center '>Fearful</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col col-1 popout" style='margin: 0px 15px 15px 0px; width: 10rem; '>
+            <div class="card">
+                <a href='https://www.youtube.com/results?search_query=angry' target="blank"><img class="card-img-top" src="../static/emojis/angry.png" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h5 class="card-title" style=' text-align: center '>Angry</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col col-1 popout" style='margin: 0px 15px 15px 0px; width: 10rem; '>
+            <div class="card">
+                <a href='https://www.youtube.com/results?search_query=disgusted+songs' target="blank"><img class="card-img-top" src="../static/emojis/disgusted.png" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h5 class="card-title" style='text-align: center '>Disgusted</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
