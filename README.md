@@ -234,7 +234,10 @@ Go to the project directory
 ```bash
   cd Emotion-Detection_Nvidia-Jetson-AI
 ```
-
+```bash
+  Download Dataset
+  https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data?select=icml_face_data.csv
+```
 Install dependencies
 
 ```bash
