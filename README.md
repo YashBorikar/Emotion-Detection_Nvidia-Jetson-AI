@@ -139,8 +139,10 @@ storage for free.
 
 ## Jetson Nano 2GB Developer Kit.
 
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<img src="https://github.com/YashBorikar/Emotion-Detection_Nvidia-Jetson-AI/blob/main/Nano%20Images/IMG_20220125_115056.jpg" alt="Demo1" width="600" height="400"/>
+<img src="https://github.com/YashBorikar/Emotion-Detection_Nvidia-Jetson-AI/blob/main/Nano%20Images/IMG_20220125_115303.jpg" alt="Demo2" width="600" height="400"/>
+<img src="https://github.com/YashBorikar/Emotion-Detection_Nvidia-Jetson-AI/blob/main/Nano%20Images/IMG_20220125_115436.jpg" alt="Demo3" width="600" height="400"/>
+<img src="https://github.com/YashBorikar/Emotion-Detection_Nvidia-Jetson-AI/blob/main/Nano%20Images/IMG_20220125_115719.jpg" alt="Demo4" width="600" height="400"/>
 
 ## Jetson Nano Compatibility
 
@@ -245,6 +247,10 @@ Start the server
   cd Flask
   python emotion_detection.py
 ```
+### Demo Video
+
+https://user-images.githubusercontent.com/96331104/152398240-87638cf5-1ec4-474c-932d-7b49cf191634.mp4
+
 ### Advantages
 
 ➢ The Emotion Based Music Player system will be of great advantage to the user
