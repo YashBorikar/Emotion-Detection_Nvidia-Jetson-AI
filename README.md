@@ -226,7 +226,7 @@ print(tf.reduce_sum(tf.random.normal([1000,1000])))
 Clone the Repository
 
 ```bash
-  git clone (#link of Repository)
+  git clone https://github.com/YashBorikar/Emotion-Detection_Nvidia-Jetson-AI.git
 ```
 
 Go to the project directory
