@@ -250,9 +250,9 @@ Start the server
   cd Flask
   python emotion_detection.py
 ```
-### Demo Video
+### Preview
 
-https://user-images.githubusercontent.com/96331104/152398240-87638cf5-1ec4-474c-932d-7b49cf191634.mp4
+https://user-images.githubusercontent.com/96331104/155603571-c820533f-5105-4854-9468-6dc7ae92f0e6.mp4
 
 ### Advantages
 
